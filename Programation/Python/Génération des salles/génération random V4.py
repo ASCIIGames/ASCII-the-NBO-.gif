@@ -20,6 +20,7 @@ for i in range(10):
 board [4] [4] = 1
     
 def reset ():
+    global board
     board = []
     for i in range(10):
         board.append([0]*10)
@@ -55,12 +56,10 @@ def drawBoard (board):
     
     
 ############################# RANDOM PART ###########################
-def isGen (x,y, nb_salle):
-    seed()
+def isGen (x,y):
     is_gen = randint(0,1)
-    if is_gen == 1 and board [x] [y] == 0 and countNeighbours(x,y) and nb_salle < 10:
+    if is_gen == 1 and board [x] [y] == 0 and countNeighbours(x,y):
         board [x] [y] = 1
-        nb_salle += 1
         res = True
     else:
         res = False
@@ -82,19 +81,46 @@ def countNeighbours (x,y):
     return res
 #####################################################################
 
+def verif(n, board):
+    if n < 10 :
+        board = []
+        for i in range(10):
+            board.append([0]*10)
+        board [4] [4] = 1
+        nextGen(board,4,4)
 
-######################### RECURSIVITE ###############################
-def nextGen (board, x, y, n):
-    nb_salle = n + 1
-    if nb_salle < 10:
+
+n = 1
+######################### RECURSIVE #################################
+def nextGen (board, x, y, timeout):
+    global n
+    
+    if n < 10:
         for (i,j) in ((x-1,y), (x,y+1), (x+1,y), (x,y-1)):
             if i >= 1 and i < 9 and j >=1 and j < 9:
-                if isGen(i,j,n):
-                    nextGen(board, i, j, nb_salle+1)
+                if timeout >= 10:
+                    print("timed out")
+                else:
+                    if n < 10 and isGen(i,j):
+                        n+=1
+                        nextGen(board, i, j, 0)
+                    else:
+                        timeout += 1
+                        nextGen(board, i, j, timeout + 1)
+                    
+                
+                    
         drawBoard(board)
 #####################################################################
 
-nextGen(board, 4, 4, 1)
+
+nextGen(board, 4, 4, 0)
+
+
+
+
+    
+
                   
                 
     

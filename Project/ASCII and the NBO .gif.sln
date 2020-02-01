@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASCII and the NBO .gif", "ASCII and the NBO .gif.csproj", "{CBC7407D-DE7A-4B9A-998B-E10F59DC65E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	Release|Any CPU = Release|Any CPU
+	Tools|Any CPU = Tools|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBC7407D-DE7A-4B9A-998B-E10F59DC65E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC7407D-DE7A-4B9A-998B-E10F59DC65E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC7407D-DE7A-4B9A-998B-E10F59DC65E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC7407D-DE7A-4B9A-998B-E10F59DC65E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC7407D-DE7A-4B9A-998B-E10F59DC65E6}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{CBC7407D-DE7A-4B9A-998B-E10F59DC65E6}.Tools|Any CPU.Build.0 = Tools|Any CPU
+	EndGlobalSection
+EndGlobal
