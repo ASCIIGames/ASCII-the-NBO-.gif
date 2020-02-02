@@ -93,10 +93,24 @@ def nextGen (board, x, y):
                 if n == 0 and (i,j) == (x, y-1)and nb_salle < 10:
                     reset(board)
                     nextgen(board, x, y)
-                nextGen(board, i, j)
+                nextGen(board, i, j)    
     drawBoard(board)
+
     
-            
-nextGen(board,4,4)                  
-                
+res = 0        
+for i in range (100):
+    board = []
+    for j in range(10):
+        board.append([0]*10)
+    board [4] [4] = 1
+
+    nb_salle = 1
+    n = 0
     
+    nextGen(board,4,4)
+    print(nb_salle)
+    if nb_salle == 10 :
+        res += 1
+print(res)                
+    
+
