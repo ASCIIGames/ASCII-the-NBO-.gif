@@ -1,0 +1,16 @@
+/afs/cri.epita.net/user/j/je/jeremy.tchenio/u/ASCII_Games/jeremy.tchenio/ASCII_and_the_NBO_gif/Godot_Project/.mono/temp/bin/Tools/ASCII & the NBO .gif.dll
+/afs/cri.epita.net/user/j/je/jeremy.tchenio/u/ASCII_Games/jeremy.tchenio/ASCII_and_the_NBO_gif/Godot_Project/.mono/temp/bin/Tools/ASCII & the NBO .gif.pdb
+/afs/cri.epita.net/user/j/je/jeremy.tchenio/u/ASCII_Games/jeremy.tchenio/ASCII_and_the_NBO_gif/Godot_Project/.mono/temp/obj/Tools/ASCII & the NBO .gif.csprojAssemblyReference.cache
+/afs/cri.epita.net/user/j/je/jeremy.tchenio/u/ASCII_Games/jeremy.tchenio/ASCII_and_the_NBO_gif/Godot_Project/.mono/temp/obj/Tools/ASCII & the NBO .gif.csproj.CoreCompileInputs.cache
+/afs/cri.epita.net/user/j/je/jeremy.tchenio/u/ASCII_Games/jeremy.tchenio/ASCII_and_the_NBO_gif/Godot_Project/.mono/temp/obj/Tools/ASCII & the NBO .gif.dll
+/afs/cri.epita.net/user/j/je/jeremy.tchenio/u/ASCII_Games/jeremy.tchenio/ASCII_and_the_NBO_gif/Godot_Project/.mono/temp/obj/Tools/ASCII & the NBO .gif.pdb
+C:\Users\Jérémy\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\bin\Tools\ASCII & the NBO .gif.dll
+C:\Users\Jérémy\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\bin\Tools\ASCII & the NBO .gif.pdb
+C:\Users\Jérémy\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\obj\Tools\ASCII & the NBO .gif.csprojAssemblyReference.cache
+C:\Users\Jérémy\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\obj\Tools\ASCII & the NBO .gif.dll
+C:\Users\Jérémy\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\obj\Tools\ASCII & the NBO .gif.pdb
+D:\Programming\GameProject\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\bin\Tools\ASCII & the NBO .gif.dll
+D:\Programming\GameProject\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\bin\Tools\ASCII & the NBO .gif.pdb
+D:\Programming\GameProject\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\obj\Tools\ASCII & the NBO .gif.csprojAssemblyReference.cache
+D:\Programming\GameProject\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\obj\Tools\ASCII & the NBO .gif.dll
+D:\Programming\GameProject\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\obj\Tools\ASCII & the NBO .gif.pdb
