@@ -1,2 +1,2 @@
 # ASCII-the-NBO-.gif
-Téléchargement bientôt disponible.
+[Téléchargez ici](https://github.com/ASCIIGames/ASCII-the-NBO-.gif/releases/tag/v1.0)
