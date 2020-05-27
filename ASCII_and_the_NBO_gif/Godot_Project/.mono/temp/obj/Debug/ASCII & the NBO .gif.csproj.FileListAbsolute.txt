@@ -1,5 +1,0 @@
-C:\Users\Jérémy\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\obj\Debug\ASCII & the NBO .gif.csprojAssemblyReference.cache
-C:\Users\Jérémy\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\bin\Debug\ASCII & the NBO .gif.dll
-C:\Users\Jérémy\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\bin\Debug\ASCII & the NBO .gif.pdb
-C:\Users\Jérémy\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\obj\Debug\ASCII & the NBO .gif.dll
-C:\Users\Jérémy\ASCII_games\ASCII_and_the_NBO_gif\Godot_Project\.mono\temp\obj\Debug\ASCII & the NBO .gif.pdb
