@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Interface/Quiz.cs" type="Script" id=1]
+
+[node name="Quiz" type="CanvasLayer"]
+script = ExtResource( 1 )
+questionTextPath = NodePath("button/questionText")
+
+[node name="button" type="Control" parent="."]
+margin_left = -8.0
+margin_top = -4.0
+margin_right = 32.0
+margin_bottom = 36.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonFalse" type="Button" parent="button"]
+margin_left = 633.0
+margin_top = 333.0
+margin_right = 870.0
+margin_bottom = 423.0
+text = "Faux"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonTrue" type="Button" parent="button"]
+margin_left = 146.0
+margin_top = 335.0
+margin_right = 383.0
+margin_bottom = 425.0
+text = "Vrai"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="questionText" type="Label" parent="button"]
+margin_left = 8.0
+margin_top = 116.0
+margin_right = 1031.0
+margin_bottom = 221.0
+text = "Question"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="button"]
+show_behind_parent = true
+margin_left = 6.43195
+margin_top = 112.167
+margin_right = 1033.43
+margin_bottom = 222.167
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="button/buttonFalse" to="." method="_on_buttonFalse_pressed"]
+[connection signal="pressed" from="button/buttonTrue" to="." method="_on_buttonTrue_pressed"]

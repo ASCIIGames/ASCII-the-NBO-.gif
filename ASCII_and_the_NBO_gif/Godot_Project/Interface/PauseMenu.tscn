@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Interface/PauseMenu.cs" type="Script" id=1]
+
+[node name="PauseMenu" type="CanvasLayer"]
+offset = Vector2( 0.341, 0 )
+transform = Transform2D( 1, 0, 0, 1, 0.341, 0 )
+script = ExtResource( 1 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="Control"]
+modulate = Color( 0.101961, 0.596078, 0.694118, 1 )
+margin_left = 390.0
+margin_top = 206.0
+margin_right = 632.0
+margin_bottom = 255.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="Control"]
+modulate = Color( 0, 0.835294, 1, 1 )
+show_behind_parent = true
+anchor_left = 3.456
+anchor_top = -0.747
+anchor_right = 3.456
+anchor_bottom = -0.497
+margin_left = 251.76
+margin_top = 235.88
+margin_right = 493.76
+margin_bottom = 454.88
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control"]
+margin_left = 391.0
+margin_top = 207.0
+margin_right = 631.0
+margin_bottom = 257.0
+text = "Pause"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="Control"]
+margin_left = 420.858
+margin_top = 320.0
+margin_right = 603.858
+margin_bottom = 397.0
+text = "Quitter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MusicButton" type="CheckButton" parent="Control"]
+margin_left = 421.0
+margin_top = 268.0
+margin_right = 602.0
+margin_bottom = 308.0
+pressed = true
+text = "Musique"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Control/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="Control/MusicButton" to="." method="_on_MusicButton_pressed"]

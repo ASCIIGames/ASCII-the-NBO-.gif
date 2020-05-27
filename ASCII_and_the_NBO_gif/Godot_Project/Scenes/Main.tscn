@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/Camera.cs" type="Script" id=2]
+[ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sound/music.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Interface/Interface.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Level.tscn" type="PackedScene" id=6]
+
+[node name="Game" type="Node2D"]
+pause_mode = 2
+script = ExtResource( 2 )
+Enemy = ExtResource( 3 )
+
+[node name="Level" parent="." instance=ExtResource( 6 )]
+pause_mode = 1
+position = Vector2( 0, -4.65906 )
+
+[node name="Player" parent="Level" instance=ExtResource( 1 )]
+collision_mask = 30
+
+[node name="Enemy" parent="Level" instance=ExtResource( 3 )]
+
+[node name="Camera" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+zoom = Vector2( 0.24, 0.235 )
+
+[node name="Interface" parent="." instance=ExtResource( 5 )]
+margin_left = 16.2901
+margin_top = 5.70152
+margin_right = 16.2901
+margin_bottom = 5.70152
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+pause_mode = 1
+stream = ExtResource( 4 )
+volume_db = -20.0
+autoplay = true
+[connection signal="Win" from="." to="Interface" method="_on_Game_Win"]
+[connection signal="Moving" from="Level/Player" to="." method="update_cam"]
+[connection signal="health_updated" from="Level/Player" to="Interface" method="_on_Player_health_updated"]
+[connection signal="killed" from="Level/Player" to="Interface" method="_on_Player_killed"]
+[connection signal="InterfaceQuizWon" from="Interface" to="Level/Enemy" method="_on_Interface_InterfaceQuizWon"]
+[connection signal="RespawnInterface" from="Interface" to="." method="_on_Interface_RespawnInterface"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
